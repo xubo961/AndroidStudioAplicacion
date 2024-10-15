@@ -13,7 +13,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1"
+        />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splashVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splashVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
         />
 
     <ImageView
@@ -45,19 +60,69 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/logiAppName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
         app:startIconDrawable="@drawable/usuario_logo"
         android:layout_marginTop="20dp"
-        />
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="User: "
+            android:inputType="textPersonName"
+            android:paddingStart="45dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPasswordTIL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/loginUsernameTIL"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
+        app:startIconDrawable="@drawable/candado_logo"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        >
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Usuario"
+        android:hint="Password: "
         android:inputType="textPersonName"
+        android:paddingStart="45dp"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        style=""
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordTIL"
+        android:layout_marginTop="10dp"
+        android:text="Iniciar"
+        android:backgroundTint="@color/black"
+        />
+    
+    <TextView
+        android:id="@+id/loginContraseñaOlvidado"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
         />
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
