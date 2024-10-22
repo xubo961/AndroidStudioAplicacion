@@ -1,16 +1,22 @@
 package com.boxu555.first;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 public class Login extends AppCompatActivity {
 
@@ -19,13 +25,30 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+
         Button loginButton = findViewById(R.id.loginButton);
         TextView loginRegisterText = findViewById(R.id.loginRegister);
-
+        TextInputLayout Usuario = findViewById(R.id.loginUsernameTIL);
+        TextInputLayout Contraseña = findViewById(R.id.loginPasswordTIL);
+        SharedPreferences preferences = getSharedPreferences("Usuario", Context.MODE_PRIVATE);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchMain();
+                String logUser = String.valueOf(Usuario.getEditText().getText());
+                String logPassword = String.valueOf(Contraseña.getEditText().getText());
+                String regUser = preferences.getString("user", "");
+                String regPassword = preferences.getString("password", "");
+
+                if (!logUser.equals(regUser)) {
+                    Toast toastUser = Toast.makeText(getApplicationContext(), "Introduce el Usuario o el Usuario no coinciden", Toast.LENGTH_SHORT);
+                    toastUser.show();
+                } else if (!logPassword.equals(regPassword)) {
+                    Toast toastPassword = Toast.makeText(getApplicationContext(), "Introduce la Contraseña o la Contraseña no coinciden", Toast.LENGTH_SHORT);
+                    toastPassword.show();
+                } else {
+                    launchMain();
+                }
             }
         });
 
