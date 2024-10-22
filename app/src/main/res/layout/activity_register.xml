@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    
+    <TextView
+        android:id="@+id/Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Registro"
+        android:fontFamily="@font/frozencascripttypeface"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splashGLH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splashVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splashVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerUserame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Registro"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
+        app:startIconDrawable="@drawable/usuario_logo"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="User: "
+            android:inputType="textPersonName"
+            android:paddingStart="45dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/registerUserame"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
+        app:startIconDrawable="@drawable/email_logo"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email: "
+            android:inputType="textPersonName"
+            android:paddingStart="45dp"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
+        app:startIconDrawable="@drawable/candado_logo"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password: "
+            android:inputType="textPersonName"
+            android:paddingStart="45dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword"
+        app:layout_constraintStart_toStartOf="@+id/splashVertical1"
+        app:layout_constraintEnd_toEndOf="@+id/splashVertical2"
+        app:startIconDrawable="@drawable/candado_logo"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirm password: "
+            android:inputType="textPersonName"
+            android:paddingStart="45dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        android:layout_marginTop="10dp"
+        android:text="Registrar"
+        android:backgroundTint="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
