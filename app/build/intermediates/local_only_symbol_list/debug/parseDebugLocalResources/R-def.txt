@@ -13,8 +13,10 @@ drawable logo
 drawable usuario_logo
 font frozencascripttypeface
 id Bienvenidos
+id RealName
 id Registro
 id addedText
+id callDialogButton
 id confirmPassword
 id logiAppName
 id loginButton
@@ -23,6 +25,7 @@ id loginRegister
 id loginUsernameTIL
 id logoSplash
 id main
+id mainCustomAlert
 id registerButton
 id registerEmail
 id registerPassword
@@ -33,11 +36,13 @@ id splashGlideBakcground
 id splashGradient
 id splashVertical1
 id splashVertical2
+id tituloNuevonombre
 id welcomeText
 layout activity_login
 layout activity_main
 layout activity_register
 layout activity_splash_screen
+layout custom_alert_dialog
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

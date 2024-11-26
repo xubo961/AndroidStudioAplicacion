@@ -3111,6 +3111,7 @@ int id CTRL 0x7f090003
 int id FUNCTION 0x7f090004
 int id META 0x7f090005
 int id NO_DEBUG 0x7f090006
+int id RealName 0x7f09020d
 int id Registro 0x7f090007
 int id SHIFT 0x7f090008
 int id SHOW_ALL 0x7f090009
@@ -3206,6 +3207,7 @@ int id bounceEnd 0x7f090062
 int id bounceStart 0x7f090063
 int id buttonPanel 0x7f090064
 int id cache_measures 0x7f090065
+int id callDialogButton 0x7f09020c
 int id callMeasure 0x7f090066
 int id cancel_button 0x7f090067
 int id carryVelocity 0x7f090068
@@ -3357,6 +3359,7 @@ int id loginUsernameTIL 0x7f0900fa
 int id logoSplash 0x7f0900fb
 int id m3_side_sheet 0x7f0900fc
 int id main 0x7f0900fd
+int id mainCustomAlert 0x7f09020e
 int id marquee 0x7f0900fe
 int id masked 0x7f0900ff
 int id match_constraint 0x7f090100
@@ -3587,6 +3590,7 @@ int id time 0x7f0901df
 int id title 0x7f0901e0
 int id titleDividerNoCustom 0x7f0901e1
 int id title_template 0x7f0901e2
+int id tituloNuevonombre 0x7f09020f
 int id toggle 0x7f0901e3
 int id top 0x7f0901e4
 int id topPanel 0x7f0901e5
@@ -3744,6 +3748,7 @@ int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_register 0x7f0c001e
 int layout activity_splash_screen 0x7f0c001f
+int layout custom_alert_dialog 0x7f0c006f
 int layout custom_dialog 0x7f0c0020
 int layout design_bottom_navigation_item 0x7f0c0021
 int layout design_bottom_sheet_dialog 0x7f0c0022

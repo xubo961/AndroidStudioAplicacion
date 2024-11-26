@@ -3112,6 +3112,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id RealName
 id Registro
 id SHIFT
 id SHOW_ALL
@@ -3207,6 +3208,7 @@ id bounceEnd
 id bounceStart
 id buttonPanel
 id cache_measures
+id callDialogButton
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3358,6 +3360,7 @@ id loginUsernameTIL
 id logoSplash
 id m3_side_sheet
 id main
+id mainCustomAlert
 id marquee
 id masked
 id match_constraint
@@ -3588,6 +3591,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tituloNuevonombre
 id toggle
 id top
 id topPanel
@@ -3745,6 +3749,7 @@ layout activity_login
 layout activity_main
 layout activity_register
 layout activity_splash_screen
+layout custom_alert_dialog
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

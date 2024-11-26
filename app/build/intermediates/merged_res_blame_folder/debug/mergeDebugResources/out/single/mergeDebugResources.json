@@ -16,6 +16,10 @@
         "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-debug-32:\\layout_custom_alert_dialog.xml.flat",
+        "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\layout\\custom_alert_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-debug-32:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\drawable\\ic_launcher_background.xml"
     },
@@ -44,10 +48,6 @@
         "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.boxu555.first.app-debug-32:/layout_activity_login.xml.flat",
-        "source": "com.boxu555.first.app-main-34:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-debug-32:\\anim_gradient_colour.xml.flat",
         "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\anim\\gradient_colour.xml"
     },
@@ -58,6 +58,10 @@
     {
         "merged": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-debug-32:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-main-34:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.boxu555.first.app-debug-32:/layout_custom_alert_dialog.xml.flat",
+        "source": "com.boxu555.first.app-main-34:/layout/custom_alert_dialog.xml"
     },
     {
         "merged": "C:\\Users\\ALUMNO\\.gradle\\daemon\\8.7\\com.boxu555.first.app-debug-32:\\drawable_logo.xml.flat",
